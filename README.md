@@ -57,49 +57,43 @@ bot/
 ├── .gitignore # Arquivos ignorados pelo Git
 └── requirements.txt # Dependências do projeto
 
-yaml
-Copiar código
-
----
 
 ## ⚙️ Configuração do Ambiente
 
 1. Clone o repositório:
 
-```bash
 git clone https://github.com/binymont/chatbot-assistente-virtual.git
 cd chatbot-assistente-virtual
+
+
 Crie um ambiente virtual (recomendado):
 
-bash
-Copiar código
 python -m venv venv
 venv\Scripts\activate       # Windows
 source venv/bin/activate    # Linux/Mac
+
+
 Instale as dependências:
 
-bash
-Copiar código
 pip install -r requirements.txt
+
 Crie um arquivo .env na raiz do projeto (não comitar no Git!) com suas chaves de API:
 
-ini
-Copiar código
 OPENAI_API_KEY=Sua_Chave_OpenAI
 EMAIL_USER=seu_email@exemplo.com
 EMAIL_PASS=sua_senha_de_email
 GOOGLE_CREDENTIALS_JSON=caminho/para/credentials.json
+
+
 🚀 Executando o Chatbot
 Para iniciar a aplicação:
 
-bash
-Copiar código
 python app.py
+
 Acesse no navegador:
 
-cpp
-Copiar código
 http://127.0.0.1:5000
+
 📝 Funcionalidades
 Login/Registro: Controle de usuários para acesso ao bot.
 
@@ -114,6 +108,7 @@ Google Calendar: Cria e gerencia eventos automaticamente.
 GPT Integration: Respostas inteligentes baseadas no modelo GPT.
 
 🔐 Boas Práticas
+
 Nunca comitar arquivos com chaves de API ou senhas (.env).
 
 Adicione sempre .env no .gitignore.
@@ -137,5 +132,6 @@ Abra um Pull Request para o repositório original.
 Este projeto está licenciado sob a Licença MIT.
 
 ⚡ Contato
+
 Desenvolvido por Sabriny Monteiro
 GitHub: https://github.com/binymont
